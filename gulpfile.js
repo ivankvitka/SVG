@@ -31,4 +31,6 @@ gulp.task('build', function () {
 		.pipe(gulp.dest('build/css'));
 	gulp.src('app/*.html')
 		.pipe(gulp.dest('build'));
+  gulp.src('app/svg/*')
+    .pipe(gulp.dest('build/svg'));
 });
