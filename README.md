@@ -1,2 +1,2 @@
-# Modal Window
-[link to github page](https://ivankvitka.github.io/ModalWindow/dest/index.html)
+# SVG
+[link to github page](https://ivankvitka.github.io/SVG/build/index.html)
