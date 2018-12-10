@@ -44,8 +44,16 @@
   width: 33%;
 }
 
-.container__data-svg {
+.container__base64-svg {
   width: 32%;
+}
+
+.container--responsive {
+  width: 800px;
+}
+
+.container__responsive-svg {
+  width: 100%;
 }
 
 .container__circle-svg {
@@ -71,6 +79,18 @@
   }
 }
 
+@media screen and (min-width: 401px) and (max-width: 900px) {
+  .container--responsive {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container--responsive {
+    width: 100%;
+  }
+}
+
 .svg-button {
   width: 100%;
 }
@@ -84,12 +104,11 @@
 }
 
 .svg-button__btn {
-  width: 100%;
+  width: 50%;
 }
 
 .svg-button__btn:hover .svg-button__fill {
-  x: 0;
-  width: 400px;
+  transform: scaleX(1);
   opacity: 1;
 }
 
@@ -113,7 +132,9 @@
 .svg-button__fill {
   cursor: pointer;
   fill: #fe0067;
-  opacity: 0.6;
+  opacity: 0.3;
+  transform-origin: 50%;
+  transform: scaleX(0);
   transition: all 0.5s;
 }
 
