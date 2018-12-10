@@ -10,14 +10,14 @@
   }
 
   &__btn {
-    width: 100%;
+    width: 50%;
 
     &:hover {
       & .svg-button__fill {
-        x: 0;
-        width: 400px;
+        transform: scaleX(1);
         opacity: 1;
       }
+
       & .svg-button__text {
         fill: #ffffff;
       }
@@ -40,7 +40,9 @@
   &__fill {
     cursor: pointer;
     fill: #fe0067;
-    opacity: 0.6;
+    opacity: 0.3;
+    transform-origin: 50%;
+    transform: scaleX(0);
     transition: all 0.5s;
 
     &--violet {

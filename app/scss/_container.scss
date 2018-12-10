@@ -37,8 +37,16 @@
     width: 33%;
   }
 
-  &__data-svg {
+  &__base64-svg {
     width: 32%;
+  }
+
+  &--responsive {
+    width: 800px;
+  }
+
+  &__responsive-svg {
+    width: 100%;
   }
 
   &__circle-svg {
@@ -63,5 +71,21 @@
 @keyframes rotate-circle {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 900px) {
+  .container {
+    &--responsive {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    &--responsive {
+      width: 100%;
+    }
   }
 }
