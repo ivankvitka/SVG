@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.container__line {
+  stroke: #00ff00;
+  stroke-width: 1px;
+}
+
+.container__line--horisontal {
+  stroke: #000000;
+  stroke-width: 3px;
+}
+
+.container__line--vertical {
+  stroke: #ff0000;
+  stroke-width: 3px;
+}
+
+.container__circle {
+  fill: #0000ff;
+}
+
+.container__elipse {
+  fill: transparent;
+  stroke: #ffff00;
+  stroke-width: 4px;
+  stroke-dasharray: 4px;
+}
+
+.container__img-svg {
+  width: 33%;
+}
+
+.container__obj-svg {
+  width: 33%;
+}
+
+.container__data-svg {
+  width: 32%;
+}
+
+.container__circle-svg {
+  width: 50%;
+}
+
+.container__red-circle {
+  fill: transparent;
+  stroke: #ff0000;
+  stroke-width: 2%;
+  stroke-linecap: round;
+  stroke-dasharray: 40%;
+  animation-name: rotate-circle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.svg-button {
+  width: 100%;
+}
+
+.svg-button__background {
+  fill: #aaaaaa;
+}
+
+.svg-button__background--black {
+  fill: #000000;
+}
+
+.svg-button__btn {
+  width: 100%;
+}
+
+.svg-button__btn:hover .svg-button__fill {
+  x: 0;
+  width: 400px;
+  opacity: 1;
+}
+
+.svg-button__btn:hover .svg-button__text {
+  fill: #ffffff;
+}
+
+.svg-button__border {
+  cursor: pointer;
+  stroke: #fe0067;
+  stroke-width: 5px;
+  fill: transparent;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.svg-button__border--violet {
+  stroke: #6500ff;
+}
+
+.svg-button__fill {
+  cursor: pointer;
+  fill: #fe0067;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.svg-button__fill--violet {
+  fill: #6500ff;
+}
+
+.svg-button__text {
+  cursor: pointer;
+  fill: #fe0067;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.svg-button__text--violet {
+  fill: #6500ff;
+}
+
+.hamburger {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.hamburger__background {
+  fill: #000000;
+}
+
+.hamburger__line {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-width: 50px;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.hamburger__line--top {
+  transform-origin: 50% 40%;
+  animation-name: top-line-moving;
+}
+
+.hamburger__line--center {
+  transform-origin: 50%;
+  animation-name: center-line-moving;
+}
+
+.hamburger__line--bottom {
+  transform-origin: 50% 60%;
+  animation-name: bottom-line-moving;
+}
+
+@keyframes top-line-moving {
+  20% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(10%) rotate(45deg);
+  }
+  55% {
+    transform: translateY(10%) rotate(45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes center-line-moving {
+  20% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  55% {
+    transform: rotate(45deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bottom-line-moving {
+  20% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-10%) rotate(-45deg);
+  }
+  55% {
+    transform: translateY(-10%) rotate(-45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(0);
+  }
+}
