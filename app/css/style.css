@@ -1,0 +1,135 @@
+.line {
+  stroke: #00ff00;
+  stroke-width: 1px;
+}
+
+.circle {
+  fill: #0000ff;
+}
+
+.h-line {
+  stroke: #000000;
+  stroke-width: 3px;
+}
+
+.v-line {
+  stroke: #ff0000;
+  stroke-width: 3px;
+}
+
+.elipse {
+  fill: transparent;
+  stroke: #ffff00;
+  stroke-width: 4px;
+  stroke-dasharray: 4px;
+}
+
+.img-svg {
+  width: 33%;
+}
+
+.obj-svg {
+  width: 33%;
+}
+
+.data-svg {
+  width: 32%;
+}
+
+.circle-svg {
+  width: 50%;
+}
+
+.red-circle {
+  fill: transparent;
+  stroke: #ff0000;
+  stroke-width: 2%;
+  stroke-linecap: round;
+  stroke-dasharray: 40%;
+  animation-name: rotate-circle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hamburger-line {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-width: 50px;
+}
+
+.top-line {
+  transform-origin: 50% 40%;
+  animation-name: top-line-moving;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.center-line {
+  transform-origin: 50%;
+  animation-name: center-line-moving;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bottom-line {
+  transform-origin: 50% 60%;
+  animation-name: bottom-line-moving;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes top-line-moving {
+  20% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(10%) rotate(45deg);
+  }
+  55% {
+    transform: translateY(10%) rotate(45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes center-line-moving {
+  20% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  55% {
+    transform: rotate(45deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bottom-line-moving {
+  20% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-10%) rotate(-45deg);
+  }
+  55% {
+    transform: translateY(-10%) rotate(-45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(0);
+  }
+}

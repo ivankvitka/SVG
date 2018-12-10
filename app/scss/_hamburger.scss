@@ -1,0 +1,80 @@
+.hamburger {
+  margin: 0 auto;
+  width: 50%;
+
+  &__background {
+    fill: #000000;
+  }
+
+  &__line {
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-width: 50px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    &--top {
+      transform-origin: 50% 40%;
+      animation-name: top-line-moving;
+
+    }
+
+    &--center {
+      transform-origin: 50%;
+      animation-name: center-line-moving;
+
+    }
+
+    &--bottom {
+      transform-origin: 50% 60%;
+      animation-name: bottom-line-moving;
+    }
+  }
+
+}
+
+@keyframes top-line-moving {
+  20% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(10%) rotate(45deg);
+  }
+  55% {
+    transform: translateY(10%) rotate(45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes center-line-moving {
+  20% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  55% {
+    transform: rotate(45deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes bottom-line-moving {
+  20% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-10%) rotate(-45deg);
+  }
+  55% {
+    transform: translateY(-10%) rotate(-45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(0);
+  }
+}

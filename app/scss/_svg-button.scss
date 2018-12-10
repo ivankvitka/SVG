@@ -1,0 +1,63 @@
+.svg-button {
+  width: 100%;
+
+  &__background {
+    fill: #aaaaaa;
+
+    &--black {
+      fill: #000000;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    &:hover {
+      & .svg-button__fill {
+        x: 0;
+        width: 400px;
+        opacity: 1;
+      }
+      & .svg-button__text {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &__border {
+    cursor: pointer;
+    stroke: #fe0067;
+    stroke-width: 5px;
+    fill: transparent;
+    z-index: 2;
+    border-radius: 20px;
+
+    &--violet {
+      stroke: #6500ff;
+    }
+  }
+
+  &__fill {
+    cursor: pointer;
+    fill: #fe0067;
+    opacity: 0.6;
+    transition: all 0.5s;
+
+    &--violet {
+      fill: #6500ff;
+    }
+  }
+
+  &__text {
+    cursor: pointer;
+    fill: #fe0067;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &--violet {
+      fill: #6500ff;
+    }
+  }
+}
